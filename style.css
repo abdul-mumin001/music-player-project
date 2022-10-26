@@ -1,0 +1,132 @@
+:root {
+    --b-width: 10%;
+    --a-iter-cont: infinite;
+    --a-name: song;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    padding: 1%;
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 50px;
+    justify-content: space-between;
+    box-shadow: 1px 2px 5px 3px rgba(0, 0, 0, 0.663);
+}
+.header .fa-bars {
+    color: white;
+    margin: 10px;
+    font-size: larger;
+    display: none;
+}
+.detail {
+    display: none;
+}
+.logo {
+    display: flex;
+}
+.signup {
+    margin: 10px;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    padding: 5px 7px;
+    color: white;
+    border-radius: 10px;
+}
+.signin {
+    margin: 10px;
+    background-color: white;
+    border: 1px solid blue;
+    cursor: pointer;
+    padding: 5px 7px;
+    color: black;
+    border-radius: 10px;
+}
+.logo .fa-music {
+    margin: 10px;
+    font-size: larger;
+    color: Blue;
+}
+.content {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.383);
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.animations {
+    background-image: url('image/kesariya.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    border: 1px solid black;
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.bar1 {
+    background-color: green;
+    width: var(--b-width);
+    animation-name: var(--a-name);
+    animation-duration: 0.55s;
+    animation-iteration-count: var(--a-iter-cont);
+}
+.bar2 {
+    background-color: yellow;
+    width: var(--b-width);
+    animation-name: var(--a-name);
+    animation-duration: 0.6s;
+    animation-iteration-count: var(--a-iter-cont);
+}
+.bar3 {
+    background-color: pink;
+    width: var(--b-width);
+    animation-name: var(--a-name);
+    animation-duration: 0.65s;
+    animation-iteration-count: var(--a-iter-cont);
+}
+.bar5 {
+    background-color: red;
+    width: var(--b-width);
+    animation-name: var(--a-name);
+    animation-duration: 0.53s;
+    animation-iteration-count: var(--a-iter-cont);
+}
+.bar6 {
+    background-color: orange;
+    width: var(--b-width);
+    animation-name: var(--a-name);
+    animation-duration: 0.63s;
+    animation-iteration-count: var(--a-iter-cont);
+}
+.bar7 {
+    background-color: violet;
+    width: var(--b-width);
+    animation-name: var(--a-name);
+    animation-duration: 0.45s;
+    animation-iteration-count: var(--a-iter-cont);
+}
+
+@keyframes song {
+    0% {
+        height: 0%;
+    } 
+    50% {
+        height: 90%;
+    }
+    100% {
+        height: 0%;
+    }
+}
