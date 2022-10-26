@@ -130,3 +130,41 @@
         height: 0%;
     }
 }
+
+
+.suggestions {
+    
+    width: 100%;
+}
+.songs {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.son {
+    margin: 10px;
+    border: 1px solid black;
+}
+.son img {
+    width: 100%;
+    height: 80%;
+    cursor: pointer;
+}
+.son h3{
+    margin: 5px;
+}
+@media only screen and (max-width: 700px) {
+    .header .fa-bars {
+        display: block;
+    }
+    .right-nav {
+        display: none;
+    }
+    .songs {
+        grid-template-columns: auto;
+    }
+}
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+    .songs {
+        grid-template-columns: auto auto auto;
+    }
+}
